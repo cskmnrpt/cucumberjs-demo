@@ -4,7 +4,7 @@
   "description": "A demo repository with Examples, for troubleshooting problems and for feature requests.",
   "main": "index.js",
   "scripts": {
-    "test": "QASE_MODE=testops npx cucumber-js -f cucumberjs-qase-reporter features -r step_definitions --publish-quiet"
+    "test": "QASE_MODE=testops npx cucumber-js -f cucumberjs-qase-reporter features/"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/cskmnrpt/qase-cucumberjs#readme",
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
-    "cucumberjs-qase-reporter": "^2.0.3",
+    "cucumberjs-qase-reporter": "^2.0.4",
     "dotenv": "^16.4.7",
     "prettier": "^3.4.2"
   }

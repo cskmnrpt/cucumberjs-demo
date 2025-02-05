@@ -23,4 +23,3 @@ This is an example repository with tests in the `tests/examples/` directory. To 
 
 ---
 ### Frequently Asked Questions
-

@@ -1,8 +1,17 @@
 Feature: Qase Fields
 
-  @QaseFields={"description":"In_BDD,_stories_guide_the_way.","precondition":"Features_speak_what_users_say.","postcondition":"Tests_bring_life_to_code_each_day."}
-  Scenario: Scenario with Qase Description, Precondition, and Postcondition
+  @QaseFields={"description":"In_BDD,_stories_guide_the_way."}
+  Scenario: Scenario with Qase Description
     Given I have a step
+
+  @QaseFields={"preconditions":"Features_speak_what_users_say."}
+  Scenario: Scenario with Qase Precondition
+    Given I have a step
+
+  @QaseFields={"postconditions":"Tests_bring_life_to_code_each_day."}
+  Scenario: Scenario with Qase Postcondition
+    Given I have a step
+
 
   ## Qase field: Severity ##
 
