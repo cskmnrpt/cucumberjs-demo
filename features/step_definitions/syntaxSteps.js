@@ -7,17 +7,16 @@ Given("I have a step", function () {
 });
 
 Given("I have a step with attachment", async function () {
+  console.log("Test passed");
+
   const imagePath = path.join(__dirname, "../../tasktide.png");
   const imageBuffer = fs.readFileSync(imagePath);
+  const base64Image = imageBuffer.toString("base64");
 
-  // ✅ Pass the raw buffer (not a base64 string)
-  await this.attach(imageBuffer, { mediaType: "image/png" });
-
-  // Optional: confirm attachment via text
-  await this.attach("Attached PNG using Buffer", { mediaType: "text/plain" });
-});
+  await this.attach(base64Image, { mediaType: 'base64:image/png' });
 
   // this.attach("I'm an attachment", "text/plain");
+});
 
 
 When("I do something", function () {
