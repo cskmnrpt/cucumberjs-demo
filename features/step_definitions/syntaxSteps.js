@@ -7,10 +7,12 @@ Given("I have a step", function () {
 });
 
 Given("I have a step with attachment", async function () {
-  const imagePath   = path.join(__dirname, "../../tasktide.png");
+  const imagePath = path.join(__dirname, "../../tasktide.png");
   const imageBuffer = fs.readFileSync(imagePath);
 
-  await this.attach(imageBuffer, "image/png");
+  await this.attach(imageBuffer, {
+    mediaType: "image/png",
+  });
 });
 
   // this.attach("I'm an attachment", "text/plain");
