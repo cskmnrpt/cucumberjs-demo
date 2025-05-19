@@ -1,13 +1,20 @@
+const fs = require("fs");
+const path = require("path");
 const { Given, When, Then } = require("@cucumber/cucumber");
 
 Given("I have a step", function () {
   console.log("Test passed");
 });
 
-Given("I have a step with attachment", function () {
-  console.log("Test passed");
-  this.attach("I'm an attachment", "text/plain");
+Given("I have a step with attachment", async function () {
+  const imagePath   = path.join(__dirname, "../../tasktide.png");
+  const imageBuffer = fs.readFileSync(imagePath);
+
+  await this.attach(imageBuffer, "image/png");
 });
+
+  // this.attach("I'm an attachment", "text/plain");
+
 
 When("I do something", function () {
   console.log("Test passed");

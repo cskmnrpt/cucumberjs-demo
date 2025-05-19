@@ -24,7 +24,7 @@
   "homepage": "https://github.com/cskmnrpt/qase-cucumberjs#readme",
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
-    "cucumberjs-qase-reporter": "^2.0.4",
+    "cucumberjs-qase-reporter": "^2.1.0",
     "dotenv": "^16.4.7",
     "prettier": "^3.4.2"
   }
