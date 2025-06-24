@@ -1,0 +1,7 @@
+{
+    "mode": "testops",
+    "testops": {
+        "uploadAttachments": true
+    },
+    "useV2": true
+}
